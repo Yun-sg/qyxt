@@ -1,7 +1,11 @@
 {
   "name": "school-feedback",
   "type": "module",
+  "private": true,
+  "dependencies": {
+    "pg": "^8.11.3"
+  },
   "scripts": {
-    "build": "echo 'Building...'"
+    "build": "echo 'Build complete'"
   }
 }
