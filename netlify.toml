@@ -1,10 +1,6 @@
 [build]
-  # 告诉 Netlify 我们的函数放在哪个文件夹
-  functions = "netlify/functions"
+  # 告诉 Netlify 我们的前端文件在 public 文件夹
+  publish = "public"
 
-# 这一部分是可选的，但加上更好：
-# 它告诉 Netlify，当有人访问 /api 时，直接运行 api.js 函数
-[[redirects]]
-  from = "/api"
-  to = "/.netlify/functions/api"
-  status = 200
+  # 告诉 Netlify 我们的后端函数在 api 文件夹
+  functions = "api"
