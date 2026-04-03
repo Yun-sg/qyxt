@@ -1,0 +1,7 @@
+{
+  "name": "school-feedback",
+  "type": "module",
+  "scripts": {
+    "build": "echo 'Building...'"
+  }
+}
