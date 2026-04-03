@@ -3,7 +3,7 @@ import { Pool } from 'pg';
 // 👇 在下面双引号里粘贴你的数据库地址
 const connectionString = "postgresql://neondb_owner:npg_vkUdWN08cxqa@ep-damp-pond-amo8xvpa-pooler.c-5.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require";
 
-const pool = new Pool({ connectionString });
+const pool = new Pool({ connectionString: connectionString });
 
 export default async (req, res) => {
   // 允许跨域（让网页能访问）
