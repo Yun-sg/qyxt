@@ -27,7 +27,7 @@ export default async (req, res) => {
       return {
         statusCode: 200,
         headers: { 'Access-Control-Allow-Origin': '*' },
-        body: JSON.stringify(result.rows),
+        body: JSON.stringify(result.rows.map(row => ({ ...row, created_at: row.created_at.toISOString() }))),
       };
     }
 
